@@ -24,10 +24,11 @@ body{
 
 .piano{
     background-color: #121212;
-    background-image: url(../imagens/golden.png), url(../imagens/shitzu.png), url(../imagens/salsicha.png);
-    background-position: top right center;
-    background-size: 200px;
+    background-image: url(../imagens/salsicha.png);
+    background-position: top;
+    background-size: 130px;
     background-repeat: no-repeat;
+    background-origin: border-box;
     width: 1000px;
     height: 400px;
     margin: 100px auto 0;
