@@ -11,8 +11,23 @@ body{
     background-color: #ebebeb;
 }
 
+.titulo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.titulo img {
+    max-width: 50px;
+    height: auto;
+}
+
 .piano{
     background-color: #121212;
+    background-image: url(../imagens/golden.png), url(../imagens/shitzu.png), url(../imagens/salsicha.png);
+    background-position: top right center;
+    background-size: 200px;
+    background-repeat: no-repeat;
     width: 1000px;
     height: 400px;
     margin: 100px auto 0;
@@ -117,4 +132,10 @@ h1{
 }
 .piano__keys .white:nth-child(17){
     margin-right: 20px;
+}
+
+.black--pressed{
+    background: linear-gradient(#222, black);
+    border-bottom: none;
+    height: 148px;
 }
