@@ -65,7 +65,7 @@ h1{
 .piano__keys{
     width: 100%;
     height: 300px;
-    background-color: #333;
+    background-color: #181818;
     border-radius: 15px;
     padding: 30px 40px;
     display: flex;
@@ -73,6 +73,48 @@ h1{
 
 .white{
     background-color: white;
+    color: rgba(0, 0, 0, 0.466);
     flex-grow: 1;
-    
+    border-radius: 5px;
+    border-bottom: 8px solid #ddd;
+    margin-left: -17px;
+    z-index: 1;
+}
+
+.key span{
+    font-weight: 600;
+    position: absolute;
+}
+
+.key{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+    user-select: none;
+}
+
+.black{
+    width: 40px;
+    background: linear-gradient(black, #333);
+    height: 150px;
+    border-radius: 0 0 5px 5px;
+    border-bottom: 8px solid #222;
+    margin-left: -20px;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.piano__keys .white:nth-child(1){
+    margin-left: 0px;
+}
+.piano__keys .white:nth-child(5){
+    margin-right: 20px;
+}
+.piano__keys .white:nth-child(12){
+    margin-right: 20px;
+}
+.piano__keys .white:nth-child(17){
+    margin-right: 20px;
 }
