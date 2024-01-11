@@ -50,6 +50,6 @@ checkbox.addEventListener('change', ({ target }) => {
     keysSection.classList.add('disabled-keys');
 })
 
-document.addEventListener('keydown', () => {
-    alert("Você apertou um botão");
+document.addEventListener('keydown', (event) => {
+   
 })
