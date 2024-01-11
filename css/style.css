@@ -8,15 +8,15 @@
 }
 
 body{
-    background-color: #ebebeb;
+    background-image: url(../imagens/cachorros.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .piano{
     background-color: #121212;
-    background-image: url(../imagens/golden.png);
-    background-position: top right;
-    background-size: 140px;
-    background-repeat: no-repeat;
     width: 1000px;
     height: 400px;
     margin: 100px auto 0;
