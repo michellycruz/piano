@@ -78,6 +78,38 @@ const keyDownMapper = {
 }
 
 document.addEventListener('keydown', (event) => {
+    event.preventDefault()
    keyDownMapper[event.key]()
-   console.log(event.key)
+})
+
+const keyUpMapper = {
+    'Tab': () => handleMouseUp(keys[0]),
+    '1': () => handleMouseUp(keys[1]),
+    'q': () => handleMouseUp(keys[2]),
+    '2': () => handleMouseUp(keys[3]),
+    'w': () => handleMouseUp(keys[4]),
+    'e': () => handleMouseUp(keys[5]),
+    '4': () => handleMouseUp(keys[6]),
+    'r': () => handleMouseUp(keys[7]),
+    '5': () => handleMouseUp(keys[8]),
+    't': () => handleMouseUp(keys[9]),
+    '6': () => handleMouseUp(keys[10]),
+    'y': () => handleMouseUp(keys[11]),
+    'u': () => handleMouseUp(keys[12]),
+    '8': () => handleMouseUp(keys[13]),
+    'i': () => handleMouseUp(keys[14]),
+    '9': () => handleMouseUp(keys[15]),
+    'o': () => handleMouseUp(keys[16]),
+    'p': () => handleMouseUp(keys[17]),
+    '-': () => handleMouseUp(keys[18]),
+    '0': () => handleMouseUp(keys[19]),
+    '=': () => handleMouseUp(keys[20]),
+    '[': () => handleMouseUp(keys[21]),
+    'Backspace': () => handleMouseUp(keys[22]),
+    ']': () => handleMouseUp(keys[23])
+}
+
+document.addEventListener('keyup', (event) => {
+    event.preventDefault()
+   keyUpMapper[event.key]()
 })
