@@ -50,6 +50,10 @@ checkbox.addEventListener('change', ({ target }) => {
     keysSection.classList.add('disabled-keys');
 })
 
+const keydownMapper = {
+    'q': 'Você digitou'
+}
+
 document.addEventListener('keydown', (event) => {
-   
+    alert(keydownMapper[event.key])
 })
